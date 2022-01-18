@@ -196,7 +196,7 @@ async def play(_, message: Message):
         buttons = url_markup2(videoid, duration_min, message.from_user.id)
         return await message.reply_photo(
             photo=thumb,
-            caption=f"📎Judul: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n ✨ <b>__Powered By Wiki__",
+            caption=f"📎Judul: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n ✨ <b>__Powered By Shiro__",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
@@ -229,7 +229,7 @@ async def play(_, message: Message):
         )
         return await message.reply_photo(
             photo=thumb,
-            caption=f"📎Judul: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n ✨ <b>__Powered By Wiki__",
+            caption=f"📎Judul: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n ✨ <b>__Powered By Shiro__",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
 
@@ -417,7 +417,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"📎Judul: **{title}\n\n⏳Durasi:** {duration_min} Menit\n\n ✨ <b>__Powered By Wiki__",
+            caption=f"📎Judul: **{title}\n\n⏳Durasi:** {duration_min} Menit\n\n ✨ <b>__Powered By Shiro__",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
@@ -440,7 +440,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"📎Judul: **{title}\n\n⏳Durasi:** {duration_min} Mins\n\n ✨ <b>__Powered By Wiki__",
+            caption=f"📎Judul: **{title}\n\n⏳Durasi:** {duration_min} Mins\n\n ✨ <b>__Powered By Shiro__",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
