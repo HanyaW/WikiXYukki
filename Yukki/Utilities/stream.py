@@ -59,7 +59,7 @@ async def start_stream(
         final_output = await CallbackQuery.message.reply_photo(
             photo=thumb,
             caption=(
-                f"🎬<b>**Lagu:** </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>**Durasi:**</b> {duration_min} \n✨<b> __Powered By Scarlet__\n👤<b>**Diminta Oleh** </b>{CallbackQuery.from_user.mention} \n🚧<b>**Antrian Ke:**</b> <b>#{position}!</b>"
+                f"🎬<b>**Lagu:** </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>**Durasi:**</b> {duration_min} \n✨<b> __Powered By Shiro__\n👤<b>**Diminta Oleh** </b>{CallbackQuery.from_user.mention} \n🚧<b>**Antrian Ke:**</b> <b>#{position}!</b>"
             ),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -83,7 +83,7 @@ async def start_stream(
             videoid, CallbackQuery.from_user.id, duration_min, duration_min
         )
         await mystic.delete()
-        cap = f"🎥<b>**Bermain:** </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n✨<b>__Powered By Scarlet__\n👤**Diminta Oleh:** {CallbackQuery.from_user.mention}"
+        cap = f"🎥<b>**Bermain:** </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n✨<b>__Powered By Shiro__\n👤**Diminta Oleh:** {CallbackQuery.from_user.mention}"
         final_output = await CallbackQuery.message.reply_photo(
             photo=thumb,
             reply_markup=InlineKeyboardMarkup(buttons),
