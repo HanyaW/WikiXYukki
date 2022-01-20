@@ -73,7 +73,7 @@ async def music_onoff(_, message: Message):
 
 
 @app.on_message(
-    filters.command(["play", f"play@{BOT_USERNAME}"]) & filters.group
+    filters.command(["play", "p", f"play@{BOT_USERNAME}"]) & filters.group
 )
 @checker
 @PermissionCheck
